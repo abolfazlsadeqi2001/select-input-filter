@@ -2,24 +2,30 @@
 <head>
 <title>table elements filter</title>
 <meta charset="utf-8" />
+<script type="text/javascript" src="index.js" ></script>
 </head>
-<body>
+<body onload="init()" >
 	<!-- class filter -->
 	<label for="class">class:</label>
-	<select>
+	<select id="classId">
+		<option>All</option>
+		<option>10</option>
 		<option>11</option>
 		<option>12</option>
 	</select>
 	<br>
 	<!-- lesson filter -->
 	<label for="lesson">lesson:</label>
-	<select>
+	<select id="lessonId">
+		<option>All</option>
 		<option>Dini</option>
 		<option>Physic</option>
+		<option> Chemistry </option>
 	</select>
 	<br>
 	<!-- table filter -->
 	<table border="1" style="width:100%;">
+		<caption style="border: black solid 2px">To teaches</caption>
 		<tr>
 			<th>title</th>
 			<th>teacher</th>
